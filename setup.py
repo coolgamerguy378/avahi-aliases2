@@ -4,7 +4,7 @@ from setuptools import (
   setup,
   find_packages,
 )
-import avahi_aliases as app
+import python3-avahi as app
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -13,8 +13,8 @@ ROOT_DIR = os.path.dirname(__file__)
 SOURCE_DIR = os.path.join(ROOT_DIR)
 
 setup(
-    name = "avahi-aliases",
-    version = __import__('avahi_aliases').__version__,
+    name = "python3-avahi",
+    version = __import__('python3-avahi').__version__,
     classifiers = (
         'Development Status :: 4 - Beta',
         'Environment :: Console',
@@ -37,10 +37,10 @@ setup(
     ],
     packages = find_packages(),
     scripts = [
-        'avahi_aliases/bin/avahi-alias',
+        'python3-avahi/bin/python3-avahi',
     ],
     data_files = [
-        ('/etc/init/',              ['avahi_aliases/etc/init/avahi-aliases.conf'] ),
+        ('/etc/init/',              ['avahi_aliases/etc/init/python3-avahi.conf'] ),
         ('/etc/avahi/',             ['avahi_aliases/etc/avahi/aliases']),
         ('/etc/avahi/aliases.d/',   ['avahi_aliases/etc/avahi/aliases.d/default']),
     ],
