@@ -1,4 +1,4 @@
-#/usr/bin/env python
+#/usr/bin/env python3
 import os
 from setuptools import (
   setup,
@@ -26,9 +26,9 @@ setup(
         'Topic :: System :: Networking',
     ),
 
-    author='Zenobius Jiricek',
-    author_email='airtonix@gmail.com',
-    url='http://github.com/airtonix/avahi-aliases',
+    author='Jake Buck',
+    author_email='Jake@378innovations.com',
+    url='http://github.com/coolgamerguy378/avahi-aliases2',
 
     description='''Simple python application that manages the announcement of multiple avahi aliases''',
     long_description = read('README'),
